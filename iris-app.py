@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-url = "https://iris-app-s8si.onrender.com/"
+url = "https://iris-app-s8si.onrender.com/iris"
 
 
 def main():
@@ -26,6 +26,7 @@ def main():
 
         status_code = response.status_code
         if status_code == 200:
+            print(results)
             prediction = results["prediction"]
             st.write(f"**Predicted class**: :blue[**{prediction}**]")
             st.image(f'{prediction}.jpeg')
