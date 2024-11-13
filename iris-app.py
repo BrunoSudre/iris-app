@@ -26,7 +26,7 @@ def main():
 
         status_code = response.status_code
         if status_code == 200:
-            print(results)
+            st.write(results)
             prediction = results["prediction"]
             st.write(f"**Predicted class**: :blue[**{prediction}**]")
             st.image(f'{prediction}.jpeg')
