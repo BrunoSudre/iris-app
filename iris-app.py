@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-url = "http://127.0.0.1:8000/iris"
+url = "https://iris-app-s8si.onrender.com/"
 
 
 def main():
